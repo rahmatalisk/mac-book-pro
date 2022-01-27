@@ -9,12 +9,19 @@ function getAmount(){
 
 
 
+document.getElementById('8gb-memory').style.backgroundColor = '#1D6DF7';
+    document.getElementById('8gb-memory').style.color = 'white';
 
 // 16Gb memory 
 document.getElementById('16gb-memory').addEventListener('click',function(){
     document.getElementById('memory-cost').innerText = 180;
+
+
     document.getElementById('16gb-memory').style.backgroundColor = '#1D6DF7';
     document.getElementById('16gb-memory').style.color = 'white';
+
+    document.getElementById('8gb-memory').style.backgroundColor = 'white';
+    document.getElementById('8gb-memory').style.color = 'black';
     //-------
     const totalPrice = getAmount();
     document.getElementById('total-price').innerText = totalPrice;
@@ -26,8 +33,13 @@ document.getElementById('16gb-memory').addEventListener('click',function(){
 //8gb extra memory
 document.getElementById('8gb-memory').addEventListener('click',function(){
     document.getElementById('memory-cost').innerText = 0;
+
+
     document.getElementById('16gb-memory').style.backgroundColor = 'white';
     document.getElementById('16gb-memory').style.color = 'black';
+
+    document.getElementById('8gb-memory').style.backgroundColor = '#1D6DF7';
+    document.getElementById('8gb-memory').style.color = 'white';
     //-------
     const totalPrice = getAmount();
     document.getElementById('total-price').innerText = totalPrice;
@@ -35,13 +47,21 @@ document.getElementById('8gb-memory').addEventListener('click',function(){
     document.getElementById('new-total-price').innerText = totalPrice;
 });
 
+// -----------ssd----------------------
 
 
-// 256gb SSD storage
+    document.getElementById('256gb-ssd').style.backgroundColor = '#1D6DF7';
+    document.getElementById('256gb-ssd').style.color = 'white';
+// 512gb SSD storage
 document.getElementById('512gb-ssd').addEventListener('click',function(){
     document.getElementById('ssd-cost').innerText = 100;
     document.getElementById('512gb-ssd').style.backgroundColor = '#1D6DF7';
     document.getElementById('512gb-ssd').style.color = 'white';
+
+    document.getElementById('256gb-ssd').style.backgroundColor = 'white';
+    document.getElementById('256gb-ssd').style.color = 'black';
+
+
     document.getElementById('1tb-ssd').style.backgroundColor = 'white';
     document.getElementById('1tb-ssd').style.color = 'black';
     //-------
@@ -53,6 +73,8 @@ document.getElementById('512gb-ssd').addEventListener('click',function(){
 
 // 256 gb Extra Memory
 document.getElementById('256gb-ssd').addEventListener('click',function(){
+    document.getElementById('256gb-ssd').style.backgroundColor = '#1D6DF7';
+    document.getElementById('256gb-ssd').style.color = 'white';
     document.getElementById('ssd-cost').innerText = 0;
     document.getElementById('512gb-ssd').style.backgroundColor = 'white';
     document.getElementById('512gb-ssd').style.color = 'black';
@@ -70,8 +92,13 @@ document.getElementById('1tb-ssd').addEventListener('click',function(){
     document.getElementById('ssd-cost').innerText = 180;
     document.getElementById('512gb-ssd').style.backgroundColor = 'white';
     document.getElementById('512gb-ssd').style.color = 'black';
+
+    document.getElementById('256gb-ssd').style.backgroundColor = 'white';
+    document.getElementById('256gb-ssd').style.color = 'black';
+
     document.getElementById('1tb-ssd').style.backgroundColor = '#1D6DF7';
     document.getElementById('1tb-ssd').style.color = 'white';
+    
     //-------
     const totalPrice = getAmount();
     document.getElementById('total-price').innerText = totalPrice;
@@ -85,6 +112,9 @@ document.getElementById('cost-delivery').addEventListener('click',function(){
     document.getElementById('delivery-cost').innerText = 20;
     document.getElementById('cost-delivery').style.backgroundColor = '#1D6DF7';
     document.getElementById('cost-delivery').style.color = 'white';
+
+    document.getElementById('free-delivery').style.backgroundColor = 'white';
+    document.getElementById('free-delivery').style.color = 'black';
     //-------
     const totalPrice = getAmount();
     document.getElementById('total-price').innerText = totalPrice;
@@ -97,6 +127,9 @@ document.getElementById('free-delivery').addEventListener('click',function(){
     document.getElementById('delivery-cost').innerText = 0;
     document.getElementById('cost-delivery').style.backgroundColor = 'white';
     document.getElementById('cost-delivery').style.color = 'black';
+    
+    document.getElementById('free-delivery').style.backgroundColor = '#1D6DF7';
+    document.getElementById('free-delivery').style.color = 'white';
     //-------
     const totalPrice = getAmount();
     document.getElementById('total-price').innerText = totalPrice;
